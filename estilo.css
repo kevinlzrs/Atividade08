@@ -1,0 +1,43 @@
+body {
+    background: url('background.jpeg') no-repeat center fixed;
+    background-size: cover;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+.conteiner {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform .5s ease;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.galeria:hover {
+    opacity: .8;
+    filter: sepia(60%) hue-rotate(90deg);
+    transform: scale(1,1);
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #4caf50;
+}
+
+@keyframes rotateY {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
